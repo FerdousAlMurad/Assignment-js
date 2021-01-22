@@ -53,8 +53,30 @@ function hotelCost(day) {
 
     return hotel;
 }
-var count = hotelCost(50);
+var count = hotelCost(71);
 console.log(count);
+
+
+
+
+//megaFriend
+
+function megaFriend(names) {
+    var maximumWord = names[0];
+
+    for (var i = 0; i < names.length; i++) {
+        var element = names[i];
+
+        if (element.length > maximumWord.length) {
+            maximumWord = element;
+        }
+    }
+    return maximumWord;
+}
+
+var bigName = megaFriend(["rasu", "likhon", "Ferdous", "Murad", "Shuvo"]);
+console.log(bigName);
+
 
 
 
